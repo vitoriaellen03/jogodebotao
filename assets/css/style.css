@@ -1,6 +1,19 @@
 body{
-  background-color: white;
+  width: 100%;
+  background-color: rgb(31, 31, 31);
   overflow: hidden;
+}
+
+.blo{
+  border: 1px solid white;
+  width: 90vw;
+  height: 90vh;
+}
+
+.ali{
+  justify-content:center;
+  align-items: center;
+  height: 80vh;
 }
 
 .classBotao{
@@ -8,10 +21,7 @@ body{
   height: 50px;
   background-color: white;
   border-radius: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10%;
-  margin-right: 10%;
+  display: inline-block;
 }
 
 .infoBloco{
@@ -23,10 +33,14 @@ body{
   }
 
 #jogo{
+    justify-content:center;
+    align-items: center;
     width: 100%;
-    border: 1px solid black;
+    height: 70vh;
+    gap: 10%;
+    margin-top: -6vh;
     display: grid;
-    grid-template-columns: auto auto auto auto; 
+    grid-template-columns: auto auto auto auto;
 }
 
 #entrada{
@@ -40,20 +54,21 @@ body{
   justify-content:center;
   align-items: center;
   font-size: 25px;
-  color: black;
+  color: rgb(255, 255, 255);
+  margin-top: -2vh;
 }
 
 #contador1{
-  display:flex;
+  margin-top: 5vh;
+  display: inline-block;
   justify-content:center;
   align-items: center;
-  font-size: 45px;
-  color: black;
+  font-size: 4vh;
+  color: rgb(255, 255, 255);
 }
 
 #bttn{
   width: auto;
   height: 30px;
-  margin-left: 47%;
-  margin-top: 10px;
+  margin-top: 2vh;
 }
