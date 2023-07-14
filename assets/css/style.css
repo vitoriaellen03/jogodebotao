@@ -1,61 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 body{
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: rgb(31, 31, 31);
   overflow: hidden;
+  scroll-behavior: smooth;
+  font-family: "VT323";
+  color: white;
 }
 
 .blo{
   border: 1px solid white;
-  width: 90vw;
-  height: 90vh;
+  width: 95vw;
+  height: 95vh;
 }
 
-.ali{
-  justify-content:center;
-  align-items: center;
-  height: 80vh;
-}
 
 .classBotao{
-  width: 50px;
-  height: 50px;
-  background-color: white;
+  width: 3vw;
+  height: 3vw;
   border-radius: 100%;
   display: inline-block;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px; 
+  color: white;
 }
 
-.infoBloco{
-    color: red;
+
+.classBotao:hover{
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border-top: 3px solid blue;
+  border-right: 3px solid green;
+  border-bottom: 3px solid red;
+  border-left: 3px solid pink;
 }
+
+
+    
+
+
+
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 .green {
     background-color: green !important;
   }
 
 #jogo{
-    justify-content:center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 70vh;
     gap: 10%;
-    margin-top: -6vh;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
 }
 
-#entrada{
-  text-align: center;
-  font-size: 25px;
-  color: black;
-}
 
 #contador{
   display:flex;
   justify-content:center;
   align-items: center;
   font-size: 25px;
-  color: rgb(255, 255, 255);
-  margin-top: -2vh;
 }
 
 #contador1{
@@ -63,12 +95,9 @@ body{
   display: inline-block;
   justify-content:center;
   align-items: center;
-  font-size: 4vh;
-  color: rgb(255, 255, 255);
 }
 
 #bttn{
   width: auto;
   height: 30px;
-  margin-top: 2vh;
 }
