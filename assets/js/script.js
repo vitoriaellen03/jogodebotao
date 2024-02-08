@@ -7,6 +7,9 @@ console.log(correto);
 console.log(errado);
 
 ///Verificar numeros///
+switch(correto = errado){
+        errado = Math.floor(Math.random() * (19 + 1) + 1);
+}
 
 
 /// Certos e errrados ///
