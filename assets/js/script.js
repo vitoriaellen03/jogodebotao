@@ -7,7 +7,7 @@ console.log(correto);
 console.log(errado);
 
 ///Verificar numeros///
-for (correto == errado; i++){
+for (correto == errado; k++){
         errado = Math.floor(Math.random() * (19 + 1) + 1);
 };
 
