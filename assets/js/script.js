@@ -8,8 +8,8 @@ console.log(errado);
 
 ///Verificar numeros///
 for (correto = errado; i++){
-        errado = Math.floor(Math.random() * (19 + 1) + 1)
-}
+        errado = Math.floor(Math.random() * (19 + 1) + 1);
+};
 
 
 /// Certos e errrados ///
