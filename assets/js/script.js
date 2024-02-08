@@ -1,14 +1,14 @@
 /// Função Embaralhar ///
-var cartas = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
-var correto = Math.floor(Math.random() * (19 + 1) + 1);
-var errado = Math.floor(Math.random() * (19 + 1) + 1);
+let cartas = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+let correto = Math.floor(Math.random() * (19 + 1) + 1);
+let errado = Math.floor(Math.random() * (19 + 1) + 1);
 
 console.log(correto);
 console.log(errado);
 
 ///Verificar numeros///
-while(correto = errado){
-        errado = Math.floor(Math.random() * (19 + 1) + 1);
+while (correto = errado){
+        errado = Math.floor(Math.random() * (19 + 1) + 1)
 }
 
 
@@ -29,7 +29,7 @@ for (let k = 1; k <= 20; k++){
       contador1.innerHTML = "Parabéns você ganhou!!!";
       /// Mostrar Imagem ///
       function display_image(src, width, height, alt) {
-        var a = document.createElement("img");
+        let a = document.createElement("img");
         a.src = src;
         a.width = width;
         a.height = height;
