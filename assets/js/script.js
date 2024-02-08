@@ -7,15 +7,13 @@ console.log(correto);
 console.log(errado);
 
 ///Verificar numeros///
-
-if (correto == errado) {
-    location.reload();
-}
+while (correto === errado) {
+    errado = Math.floor(Math.random() * 20 + 1);
+};
 
 
 /// Certos e errrados ///
-else {
-    for (let k = 1; k <= 20; k++){
+for (let k = 1; k <= 20; k++){
     const botao = document.createElement("button");
     botao.classList.add('classBotao');
     botao.value = [k];
@@ -45,7 +43,6 @@ else {
                       110, 
                     'assets/img/1.gif');
       }
-    }
 
 
     else{
